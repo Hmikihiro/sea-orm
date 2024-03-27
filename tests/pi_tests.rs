@@ -1,6 +1,6 @@
 pub mod common;
 
-use common::{features::*, setup::*, TestContext};
+use common::{features::*, setup::*};
 use pretty_assertions::assert_eq;
 use sea_orm::{entity::prelude::*, entity::*, DatabaseConnection};
 use std::str::FromStr;

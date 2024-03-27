@@ -2,10 +2,7 @@ pub mod common;
 
 pub use chrono::offset::Utc;
 pub use common::{bakery_chain::*, setup::*, TestContext};
-use pretty_assertions::assert_eq;
 pub use rust_decimal::prelude::*;
-use sea_orm::{entity::*, query::*, DbErr, DerivePartialModel, FromQueryResult};
-use sea_query::{Expr, Func, SimpleExpr};
 pub use uuid::Uuid;
 
 // Run the test locally:

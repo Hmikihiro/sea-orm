@@ -1,9 +1,7 @@
 pub mod common;
 
 pub use common::{bakery_chain::*, setup::*, TestContext};
-use sea_orm::{entity::prelude::*, IntoActiveModel, Set};
 pub use sea_query::{Expr, Query};
-use serde_json::json;
 
 #[sea_orm_macros::test]
 async fn main() -> Result<(), DbErr> {
