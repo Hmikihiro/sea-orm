@@ -509,10 +509,7 @@ pub async fn cursor_pagination(db: &DatabaseConnection) -> Result<(), DbErr> {
     Ok(())
 }
 
-use common::bakery_chain::{
-    baker, bakery, cake, cakes_bakers, Baker, Bakery, Cake,
-    CakesBakers,
-};
+use common::bakery_chain::{baker, bakery, cake, cakes_bakers, Baker, Bakery, Cake, CakesBakers};
 
 fn bakery(i: i32) -> bakery::Model {
     bakery::Model {
